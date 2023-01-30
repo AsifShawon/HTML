@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    height: 720px;
+    width: 100%;
+    background-image: url("files/light_1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* .navigation{
+    height: 50px;
+} */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 20px 8% 50px;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.shawon {
+    color: rgb(232, 67, 67);
+}
+
+.nav_bar {
+    list-style-type: none;
+}
+
+.nav_bar li {
+    display: inline;
+    padding: 0 20px;
+}
+
+.nav_bar li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.nav_bar li a:hover{
+    color: rgb(235, 76, 76);
+    /* text-transform: uppercase; */
+}
+
+.github {
+    padding: 5px 20px;
+    background-color: darkcyan;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.github a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.github:hover,.github a:hover  { 
+    color: darkcyan;
+    background-color: rgb(255, 255, 255);
+    /* text-transform: uppercase; */
+}
+
+.content1 {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: gainsboro;
+    /* margin: 2px 0 2px; */
+    font-size: 60px;
+}
+
+h3{
+    color: rgb(232, 172, 98);
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+h4{
+    color: beige;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+
+.newslatter form{
+    width: 380px;
+    height: 100%;
+    position: relative;
+}
+
+.newslatter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid rgb(221, 77, 77);
+    outline: none;
+    border-radius: 40px;
+}
+
+#demo {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 40px;
+    background-color: indianred;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+    padding: 10px;
+}
+
+#demo:hover + .hide{
+    display: block;
+    color: red;
+}

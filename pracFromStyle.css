@@ -1,0 +1,165 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body,
+div,
+p,
+form,
+input,
+select {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: #eee;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+body {
+    background: url('Files/programming.jpg') no-repeat;
+    
+    background-size: cover;
+    color: white;
+}
+
+h2 {
+    margin: 0 0 0 8px;
+}
+
+.main_heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 25px;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.left_side, form{
+    padding: 60px;
+}
+
+.left_side {
+    text-align: center;
+    float:  left;
+}
+
+.fa-graduation-cap {
+    font-size: 72px;
+}
+
+form {
+    background: rgb(0, 0, 0, 0.7);
+    /* float: right; */
+}
+
+
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info
+ {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+select {
+    padding: 5px;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid cornsilk;
+}
+
+/* input::placeholder{
+    color: #eee;
+} */
+
+option:focus {
+    border: none;
+}
+
+option {
+    background: black;
+    border: none;
+}
+
+
+
+.checkbox input {
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+.checkbox a {
+    color: aquamarine;
+}
+
+.checkbox a:hover {
+    color: burlywood;
+}
+
+.btn,
+button {
+    padding: 10px 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(231, 238, 45);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    margin: 20px 5px 0;
+}
+
+button, .checkbox{
+    width: 35%;
+    float: right;
+}
+
+button:hover {
+    background: burlywood;
+}
+
+/*I don't get it now 
+???????????????????*/
+@media (min-width: 568px) {
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    .container {
+        flex-direction: row;
+        height: calc(100% - 50px);
+    }
+
+    .left_side,
+    form {
+        flex: 1;
+        height: auto;
+    }
+}
+
+#togglePassword {
+    margin-left: -30px;
+    cursor: pointer;
+}

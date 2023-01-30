@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="pracFromStyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <dev class="container">
+      <div class="left_side">
+        <i class="fas fa-graduation-cap"></i>
+        <h1 class="main_heading">Registration Form</h1>
+        <p class="intro">
+          We provide free learning materials for programming languages like
+          HTML, CSS, Java Script, Python, Java, etc.
+        </p>
+        <a class="btn">Learn HTML</a>
+        <a class="btn">Seletc Quiz</a>
+      </div>
+      <!-- <div class="right_side"> -->
+      <form action="/">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i>
+          <h2>Register Here</h2>
+        </div>
+        <div class="info">
+          <input type="text" name="name" required placeholder="Name" />
+
+          <input type="email" name="email" required placeholder="Email" />
+
+          <input
+            type="number"
+            name="number"
+            required
+            placeholder="Phone Number"
+          />
+
+          <input
+            type="password"
+            name="password"
+            required
+            placeholder="Password"
+          />
+          <!-- <i class="far fa-eye" id="togglePassword"></i> -->
+
+          <select name="courses" id="courses">
+            <option value="">Select Course*</option>
+            <option value="html+css">HTML+CSS</option>
+            <option value="javascript">Javascript</option>
+            <option value="java">Java</option>
+            <option value="C/C++">C/C++</option>
+            <option value="Python">Python</option>
+          </select>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" name="checkbox" required />I agree to the
+            <a href="#" class="privacy_policy">Privacy Policy</a>
+        </div><br>
+        <button class="submit">Submit</button>
+      </form>
+      <!-- </div> -->
+    </dev>
+  </body>
+</html>
